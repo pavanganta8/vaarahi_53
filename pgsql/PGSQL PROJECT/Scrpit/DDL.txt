@@ -1,3 +1,4 @@
+-- create database 
 CREATE DATABASE data_ware_house;
 
 CREATE SCHEMA IF NOT EXISTS bronze;
