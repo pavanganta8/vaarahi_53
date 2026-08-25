@@ -1,0 +1,66 @@
+# Welcome to your dbt project!
+# This configuration file tells dbt how to run models, where to find scripts,
+# and configures features like materializations, variables, and hooks.
+
+name: 'dbt_class_notes'
+version: '1.0.0'
+config-version: 2
+
+# Profile matches the target connection configuration in ~/.dbt/profiles.yml
+profile: 'class_notes'
+
+# These paths are where dbt will look for different types of files
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Defining variables that can be accessed globally within the project using {{ var('...') }}
+# This is ideal for teaching how to parameterize sql scripts (e.g. date limits, toggles).
+vars:
+  current_academic_year: 2026
+  enable_audit_logging: true
+
+# Configuring model folders and materializations
+# By default, models are materialized as views, but we can customize behavior by directory
+models:
+  dbt_class_notes:
+    # 01_models_and_materialization shows how to override these in individual files
+    01_models_and_materialization:
+      +materialized: view  # Default for this folder
+
+    # 02_seeds_and_sources folder contains views referencing seeds and sources
+    02_seeds_and_sources:
+      +materialized: view
+
+    # 03_tests folder models
+    03_tests:
+      +materialized: table
+
+    # 04_macros_and_jinja folder models
+    04_macros_and_jinja:
+      +materialized: view
+
+    # 05_documentation folder models
+    05_documentation:
+      +materialized: view
+
+    # 06_hooks folder demonstrates pre- and post-hooks.
+    # We define a project-level post-hook here that prints a statement.
+    # It demonstrates how to execute SQL commands automatically after running models in this folder.
+    06_hooks:
+      +materialized: table
+      +post-hook:
+        - "select 1; -- Example of a project-level hook: could be a GRANT command"
+
+# Seeds configuration
+seeds:
+  dbt_class_notes:
+    # We can define column types, schemas, or file-level configurations here
+    +schema: raw

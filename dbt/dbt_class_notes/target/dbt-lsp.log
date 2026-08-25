@@ -1,0 +1,76 @@
+==================== 2026-06-24T03:34:39.343259Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-24T03:34:39.362219Z | e6341f10-99df-43a5-af88-ac08461b435f ====================
+03:34:39.364278 [info ]: Starting dbt LSP server
+03:34:39.365887 [info ]: Connecting to LSP client on port 8000
+03:34:39.373859 [info ]: Successfully connected to LSP client
+03:34:39.374600 [info ]: Creating LSP service...
+03:34:39.641929 [info ]: Creating LSP server...
+03:34:39.641996 [info ]: Starting LSP server...
+03:34:39.812854 [info ]: Loading ~/.dbt/profiles.yml
+03:34:47.088350 [info ]: Loading ~/.dbt/profiles.yml
+03:34:49.900405 [info ]: Loading ~/.dbt/profiles.yml
+03:34:49.920431 [info ]: Loading ~/.dbt/profiles.yml
+03:34:49.928690 [info ]: Loading ~/.dbt/profiles.yml
+03:34:49.933321 [info ]: Loading ~/.dbt/profiles.yml
+03:34:49.955301 [info ]: Loading ~/.dbt/profiles.yml
+03:34:49.958437 [info ]: Loading ~/.dbt/profiles.yml
+03:34:49.962654 [info ]: Loading ~/.dbt/profiles.yml
+03:34:49.965939 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.093318 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.097756 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.103824 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.107299 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.110945 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.113996 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.116800 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.120642 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.123432 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.126793 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.130850 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.133998 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.137262 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.140265 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.143885 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.147531 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.150635 [info ]: Loading ~/.dbt/profiles.yml
+03:34:50.158523 [info ]: Loading ~/.dbt/profiles.yml
+03:38:56.953108 [info ]: Loading ~/.dbt/profiles.yml
+==================== 2026-06-25T01:31:20.742531Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-25T01:31:20.883183Z | a0048d9c-d38a-41e0-8d59-e2cb08194ba5 ====================
+01:31:20.889364 [info ]: Starting dbt LSP server
+01:31:20.895989 [info ]: Connecting to LSP client on port 8000
+01:31:20.927771 [info ]: Successfully connected to LSP client
+01:31:20.931405 [info ]: Creating LSP service...
+01:31:21.769533 [info ]: Creating LSP server...
+01:31:21.769574 [info ]: Starting LSP server...
+01:31:22.827820 [info ]: Loading ~/.dbt/profiles.yml
+01:31:22.957540 [info ]: Loading ~/.dbt/profiles.yml
+01:42:32.735253 [info ]: Loading ~/.dbt/profiles.yml
+01:42:45.232651 [info ]: Loading ~/.dbt/profiles.yml
+02:21:48.298576 [info ]: Loading ~/.dbt/profiles.yml
+03:42:03.026501 [info ]: Loading ~/.dbt/profiles.yml
+03:55:57.300499 [info ]: Loading ~/.dbt/profiles.yml
+03:55:59.229657 [info ]: Loading ~/.dbt/profiles.yml
+04:42:38.212711 [info ]: Loading ~/.dbt/profiles.yml
+04:44:28.745718 [info ]: Loading ~/.dbt/profiles.yml
+04:45:07.658915 [info ]: Loading ~/.dbt/profiles.yml
+04:45:58.264524 [info ]: Loading ~/.dbt/profiles.yml
+04:46:03.592242 [info ]: Loading ~/.dbt/profiles.yml
+==================== 2026-06-30T08:33:03.901115Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-30T08:33:03.903759Z | fa4622af-9a4a-462f-bd63-af2c9b417de5 ====================
+08:33:03.906709 [info ]: Starting dbt LSP server
+08:33:03.909537 [info ]: Connecting to LSP client on port 8000
+08:33:03.929809 [info ]: Successfully connected to LSP client
+08:33:03.943903 [info ]: Creating LSP service...
+08:33:05.698882 [info ]: Creating LSP server...
+08:33:05.698910 [info ]: Starting LSP server...
+08:33:07.913070 [info ]: Loading ~/.dbt/profiles.yml
+==================== 2026-06-30T16:13:33.836751Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-30T16:13:33.838466Z | 63186740-bef5-49f4-86fd-43d728dc42b0 ====================
+16:13:33.840801 [info ]: Starting dbt LSP server
+16:13:33.842744 [info ]: Connecting to LSP client on port 8000
+16:13:33.855398 [info ]: Successfully connected to LSP client
+16:13:33.856132 [info ]: Creating LSP service...
+16:13:34.649910 [info ]: Creating LSP server...
+16:13:34.649942 [info ]: Starting LSP server...
+16:13:35.337383 [info ]: Loading ~/.dbt/profiles.yml

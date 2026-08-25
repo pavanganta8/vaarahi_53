@@ -1,0 +1,6 @@
+# This file configures external dbt packages to import.
+# Run `dbt deps` to download and install these packages.
+
+packages:
+  - package: dbt-labs/dbt_utils
+    version: 1.1.1 # Standard library of utility macros (e.g. pivoting, surrogate key generation)

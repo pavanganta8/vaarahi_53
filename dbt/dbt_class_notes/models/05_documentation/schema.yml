@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_customers
+    # We reference the rich markdown text defined in docs.md using doc()
+    description: "{{ doc('customer_overview') }}"
+    columns:
+      - name: customer_id
+        description: "Unique surrogate key of the customer."
+      - name: full_name
+        description: "Formatted concatenation of first name and last name."

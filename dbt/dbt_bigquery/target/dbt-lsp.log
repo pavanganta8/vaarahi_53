@@ -1,0 +1,29 @@
+==================== 2026-06-23T02:58:36.143962Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-23T02:58:36.144690Z | fe9f1112-06e2-40c3-87f1-87dc4d940d15 ====================
+02:58:36.144800 [info ]: Starting dbt LSP server
+02:58:36.144905 [info ]: Connecting to LSP client on port 8000
+02:58:36.147861 [info ]: Successfully connected to LSP client
+02:58:36.147913 [info ]: Creating LSP service...
+02:58:36.517577 [info ]: Creating LSP server...
+02:58:36.517600 [info ]: Starting LSP server...
+02:58:36.563491 [info ]: Loading ~/.dbt/profiles.yml
+02:58:36.579930 [info ]: Loading ~/.dbt/profiles.yml
+02:58:36.583949 [info ]: Loading ~/.dbt/profiles.yml
+02:58:36.586292 [info ]: Loading ~/.dbt/profiles.yml
+02:58:36.589790 [info ]: Loading ~/.dbt/profiles.yml
+02:58:36.592807 [info ]: Loading ~/.dbt/profiles.yml
+02:58:36.595494 [info ]: Loading ~/.dbt/profiles.yml
+02:58:36.598339 [info ]: Loading ~/.dbt/profiles.yml
+02:58:36.602268 [info ]: Loading ~/.dbt/profiles.yml
+02:58:36.604918 [info ]: Loading ~/.dbt/profiles.yml
+02:58:36.607608 [info ]: Loading ~/.dbt/profiles.yml
+==================== 2026-06-24T03:38:39.788898Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-24T03:38:39.789191Z | 006f91ba-faaf-43a9-b4d2-94023a196d67 ====================
+03:38:39.789219 [info ]: Starting dbt LSP server
+03:38:39.789232 [info ]: Connecting to LSP client on port 8000
+03:38:39.791582 [info ]: Successfully connected to LSP client
+03:38:39.791623 [info ]: Creating LSP service...
+03:38:39.979814 [info ]: Creating LSP server...
+03:38:39.979843 [info ]: Starting LSP server...
+03:38:40.028711 [info ]: Loading ~/.dbt/profiles.yml
+03:38:56.955471 [info ]: Loading ~/.dbt/profiles.yml

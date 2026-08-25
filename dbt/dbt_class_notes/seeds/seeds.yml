@@ -1,0 +1,28 @@
+version: 2
+
+seeds:
+  - name: raw_customers
+    description: "Raw customer records loaded via dbt seed."
+    columns:
+      - name: id
+        description: "Primary key for raw_customers."
+        tests:
+          - unique
+          - not_null
+      - name: email
+        description: "Customer email address."
+        tests:
+          - not_null
+
+  - name: raw_products
+    description: "Raw product catalog data loaded via dbt seed."
+    config:
+      # We can configure seed-specific column types (e.g. casting price to numeric/decimal)
+      column_types:
+        price: numeric(10,2)
+    columns:
+      - name: id
+        description: "Primary key for raw_products."
+        tests:
+          - unique
+          - not_null

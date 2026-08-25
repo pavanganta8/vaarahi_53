@@ -1,0 +1,74 @@
+[0m10:39:02.358454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A662B3A3C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A65F90EE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A663F23D90>]}
+
+
+============================== 10:39:02.369941 | 4b7ad767-de82-476f-9995-22fd55dbb51e ==============================
+[0m10:39:02.369941 [info ] [MainThread]: Running with dbt=1.11.11
+[0m10:39:02.371499 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\DELL 7280\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt ', 'use_experimental_parser': 'False', 'log_path': 'c:\\Users\\DELL 7280\\Downloads\\SQL\\backup\\pavan_class_notes\\dbt\\dbt_class_notes\\logs'}
+[0m10:39:03.058026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4b7ad767-de82-476f-9995-22fd55dbb51e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A66324D480>]}
+[0m10:39:03.148382 [debug] [MainThread]: Set downloads directory='C:\Users\DELL72~1\AppData\Local\Temp\dbt-downloads-j45l986e'
+[0m10:39:03.149410 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m10:39:04.877954 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m10:39:04.882936 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m10:39:06.847676 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m10:39:06.894997 [info ] [MainThread]: Updating lock file in file path: C:\Users\DELL 7280\Downloads\SQL\backup\pavan_class_notes\dbt\dbt_class_notes/package-lock.yml
+[0m10:39:06.926387 [debug] [MainThread]: Set downloads directory='C:\Users\DELL72~1\AppData\Local\Temp\dbt-downloads-s9r20ky4'
+[0m10:39:06.941105 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m10:39:15.738662 [error] [MainThread]: Encountered an error:
+[WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.1.1\\integration_tests'
+[0m10:39:17.192805 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 856, in move
+    os.rename(src, real_dst)
+    ~~~~~~~~~^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.1.1' -> 'dbt_packages\\dbt_utils'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\requires.py", line 258, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\main.py", line 466, in deps
+    results = task.run()
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\deps.py", line 332, in run
+    package.install(self.project, renderer)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\deps\registry.py", line 63, in install
+    self._install(project, renderer)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\deps\base.py", line 121, in _install
+    connection_exception_retry(download_untar_fn, 5)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt_common\utils\connection.py", line 22, in connection_exception_retry
+    return fn()
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\deps\base.py", line 133, in download_and_untar
+    system.untar_package(tar_path, deps_path, package_name)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt_common\clients\system.py", line 660, in untar_package
+    dbt_common.clients.system.rename(downloaded_path, desired_path, force=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt_common\clients\system.py", line 617, in rename
+    shutil.move(from_path, to_path)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 874, in move
+    rmtree(src)
+    ~~~~~~^^^^^
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 790, in rmtree
+    return _rmtree_unsafe(path, onexc)
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 621, in _rmtree_unsafe
+    onexc(os.rmdir, fullname, err)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL 7280\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 617, in _rmtree_unsafe
+    os.rmdir(fullname)
+    ~~~~~~~~^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'dbt_packages\\dbt-utils-1.1.1\\integration_tests'
+
+[0m10:39:17.196561 [debug] [MainThread]: Command `cli deps` failed at 10:39:17.196268 after 15.36 seconds
+[0m10:39:17.197845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6651AC6B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6651AC7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A665175050>]}
+[0m10:39:17.199866 [debug] [MainThread]: Flushing usage events
+[0m10:39:20.998230 [debug] [MainThread]: An error was encountered while trying to flush usage events

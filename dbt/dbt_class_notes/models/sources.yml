@@ -1,0 +1,33 @@
+version: 2
+
+sources:
+  - name: raw_source
+    description: "The raw source data ingested from the external transactional database."
+    # database: dev  # Typically parameterized or omitted to fallback to target profile database
+    schema: raw      # The schema where raw tables reside
+
+    # Freshness configurations alert us if data stops arriving in the warehouse
+    freshness:
+      warn_after: {count: 24, period: hour}
+      error_after: {count: 48, period: hour}
+
+    loaded_at_field: updated_at # Column used to determine freshness of the data
+
+    tables:
+      - name: raw_customers_source
+        description: "Raw customer records inside the transactional database."
+        # We can configure freshness overrides or custom tests directly at the source level
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+
+      - name: raw_orders_source
+        description: "Raw order transactions from checkout system."
+        loaded_at_field: order_date # Custom field override for this table's freshness
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
